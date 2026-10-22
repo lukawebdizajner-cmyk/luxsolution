@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="sr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lux Solution | Izrada sajtova i video reklame za firme</title>
+<meta name="description" content="Lux Solution pravi moderne sajtove i video reklame za firme i majstore. Sajt od 150 €, video reklama od 5.000 din. Primeri, paketi i kontakt: 062 8251514.">
+<link rel="canonical" href="https://luxsolution.rs/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://luxsolution.rs/">
+<meta property="og:title" content="Lux Solution | Sajtovi i video reklame za firme">
+<meta property="og:description" content="Moderni sajtovi i video reklame za firme i majstore. Pogledajte primere i pakete.">
+<meta property="og:image" content="https://luxsolution.rs/poster.jpg">
+<meta name="theme-color" content="#06070c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2306070c'/%3E%3Crect x='16' y='16' width='32' height='32' transform='rotate(45 32 32)' fill='none' stroke='%23d8b26a' stroke-width='3'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' font-style='italic' font-weight='700' fill='%23f6e2a8' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E">
+<style>html,body{margin:0}img{max-width:100%}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,600;1,700&family=Poppins:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: one narrow mobile column (max 560px) like a phone brochure; showreel in a gold-edged phone frame up top, then services, examples grid, steps, prices, FAQ, contact. Single deliberate dark look (midnight + gold). */
+:root{
+  --ink:#06070c; --night:#0c1120; --card:#121a2e; --line:rgba(216,178,106,.22);
+  --gold:#d8b26a; --gold-hi:#f6e2a8; --gold-lo:#8c6a2b; --paper:#f3eee3; --mute:#a3a9b8;
+  --ser:"Lora",Georgia,serif; --body:"Poppins","Segoe UI",system-ui,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--ink);background-image:radial-gradient(120% 60% at 50% 0%,#172038 0%,var(--night) 40%,var(--ink) 80%);background-attachment:fixed;
+  color:var(--paper);font-family:var(--body);font-size:16px;line-height:1.55;
+  padding-left:max(16px, env(safe-area-inset-left,0px));padding-right:max(16px, env(safe-area-inset-right,0px));padding-block:0 40px}
+.wrap{max-width:560px;margin:0 auto}
+h1,h2,h3{font-family:var(--ser);font-weight:700;letter-spacing:-.01em;text-wrap:balance;margin:0}
+.gold{background:linear-gradient(100deg,var(--gold-lo),var(--gold) 25%,var(--gold-hi) 50%,var(--gold) 70%,var(--gold-lo));-webkit-background-clip:text;background-clip:text;color:transparent}
+em.gold{font-style:italic}
+.eyebrow{font:600 12px var(--body);letter-spacing:.32em;text-transform:uppercase;color:var(--gold)}
+section{padding-block:44px 8px}
+section>h2{font-size:clamp(28px,7vw,36px);line-height:1.1;margin-top:10px}
+section>p.lead{color:var(--mute);margin:10px 0 0;max-width:65ch}
+
+/* header */
+header{display:flex;align-items:center;gap:12px;padding-block:22px 0}
+.mono{width:44px;height:44px;position:relative;display:grid;place-items:center;flex:none}
+.mono::before{content:"";position:absolute;inset:0;border:1.5px solid var(--gold);transform:rotate(45deg) scale(.74)}
+.mono span{font:700 italic 24px var(--ser);position:relative}
+.brand b{display:block;font:700 20px var(--ser);line-height:1}
+.brand small{font:600 10px var(--body);letter-spacing:.42em;color:var(--gold)}
+
+/* hero */
+.hero{padding-top:30px;text-align:center}
+.hero h1{font-size:clamp(34px,9vw,46px);line-height:1.05}
+.hero p{color:#cfd3dc;margin:14px auto 0;max-width:34ch}
+.phone{margin:28px auto 0;width:min(78%,300px);aspect-ratio:9/16;max-width:100%;border-radius:32px;padding:8px;
+  background:linear-gradient(145deg,#2a2f3d,#0b0e16);box-shadow:0 0 0 1.5px rgba(216,178,106,.55),0 30px 60px -18px rgba(0,0,0,.9),0 0 80px -30px rgba(216,178,106,.5)}
+.phone video{width:100%;height:100%;object-fit:cover;border-radius:25px;display:block;background:#000}
+.hint{font-size:13px;color:var(--mute);margin-top:12px}
+
+/* services */
+.svc{display:grid;gap:14px;margin-top:22px}
+.svc.rev>.box:first-child{order:2}
+.box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.box h3{font-size:24px;display:flex;align-items:center;gap:12px}
+.box h3 i{flex:none;width:38px;height:38px;border-radius:10px;background:rgba(216,178,106,.12);border:1px solid var(--line);display:grid;place-items:center}
+.box h3 svg{width:20px;height:20px;fill:none;stroke:var(--gold-hi);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.box p{margin:10px 0 12px;color:#cfd3dc}
+ul.ck{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+ul.ck li{display:flex;gap:10px;align-items:flex-start}
+ul.ck li::before{content:"";flex:none;width:8px;height:8px;margin-top:9px;background:var(--gold);transform:rotate(45deg)}
+
+/* examples */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px}
+.ex{position:relative;aspect-ratio:9/16;max-width:100%;border-radius:12px;overflow:hidden;box-shadow:0 0 0 1px var(--line)}
+.ex img{width:100%;height:100%;object-fit:cover;display:block}
+.ex span{position:absolute;left:6px;right:6px;bottom:6px;font:600 11px var(--body);text-align:center;background:rgba(6,7,12,.78);border-radius:20px;padding:4px 4px;color:var(--gold-hi)}
+
+/* sites */
+.sites{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
+.site{display:flex;flex-direction:column;text-decoration:none;color:var(--paper);background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:transform .2s,border-color .2s}
+.site:hover{transform:translateY(-3px);border-color:var(--gold)}
+.site:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
+.bw{display:flex;align-items:center;gap:4px;padding:7px 8px;background:#1b2235;min-width:0}
+.bw i{width:6px;height:6px;border-radius:50%;background:#3a4560;flex:none}
+.bw span{margin-left:4px;font-size:10px;color:var(--mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.shot{display:block;width:100%;aspect-ratio:3/4;max-width:100%;object-fit:cover;object-position:top;background:#0b0e16}
+.mock{position:relative;aspect-ratio:4/3;max-width:100%;background:var(--c1);color:var(--tx);padding:14px 12px;display:flex;flex-direction:column;justify-content:flex-end;gap:4px;overflow:hidden}
+.mock::before{content:"";position:absolute;right:-20%;top:-30%;width:80%;height:80%;border-radius:50%;background:var(--c2);opacity:.85}
+.mock b{position:relative;font:700 clamp(15px,4.2vw,19px)/1.1 var(--ser)}
+.mock em{position:relative;font-style:normal;font-size:11px;opacity:.8}
+.mock s{position:relative;display:block;width:56%;height:16px;border-radius:10px;background:var(--c2);margin-top:6px}
+.meta{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:10px 12px;font-size:13px}
+.meta span{color:var(--mute);min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.meta u{text-decoration:none;color:var(--gold-hi);font-weight:600;white-space:nowrap}
+
+/* testimonials */
+.tm{display:grid;gap:12px;margin-top:22px}
+.quote{margin:0;background:linear-gradient(160deg,rgba(216,178,106,.12),var(--card) 60%);border:1px solid var(--gold);border-radius:18px;padding:22px 20px;position:relative;overflow:hidden}
+.quote::before{content:"\201C";position:absolute;right:14px;top:-18px;font:700 120px/1 var(--ser);color:rgba(216,178,106,.18)}
+.stars{color:var(--gold-hi);letter-spacing:4px;font-size:16px}
+.quote blockquote{margin:12px 0 18px;font:600 italic clamp(22px,6vw,26px)/1.3 var(--ser);color:var(--paper)}
+.quote figcaption{display:flex;align-items:center;gap:12px}
+.quote .av{flex:none;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font:700 20px var(--ser);color:#0c1120;background:linear-gradient(135deg,var(--gold-hi),var(--gold))}
+.quote figcaption b{display:block;font-weight:600}
+.quote figcaption small{color:var(--mute);font-size:13px}
+
+/* steps */
+ol.steps{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:12px;counter-reset:s}
+ol.steps li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+ol.steps li::before{counter-increment:s;content:counter(s);width:44px;height:44px;border-radius:50%;border:1.5px solid var(--gold);display:grid;place-items:center;font:700 20px var(--ser);color:var(--gold-hi)}
+ol.steps b{display:block;font-weight:600;margin-bottom:2px}
+ol.steps span{color:var(--mute);font-size:15px}
+
+/* prices */
+.prices{display:grid;gap:12px;margin-top:22px}
+.price{display:flex;justify-content:space-between;align-items:center;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.price div{min-width:0}
+.price b{display:block;font:700 19px var(--ser)}
+.price small{color:var(--mute);font-size:14px}
+.price .v{flex:none;text-align:right;font:700 22px var(--ser);color:var(--gold-hi);font-variant-numeric:tabular-nums;white-space:nowrap}
+.price .v i{display:block;font:500 11px var(--body);font-style:normal;letter-spacing:.2em;color:var(--mute);text-transform:uppercase}
+.price.hl{border-color:var(--gold);background:linear-gradient(135deg,rgba(216,178,106,.14),var(--card))}
+.note{font-size:14px;color:var(--mute);margin-top:12px}
+.price .v small{font:500 13px var(--body);color:var(--mute);margin-left:2px}
+h3.pt{font-size:20px;margin:26px 0 0;color:var(--paper)}
+.intro{display:inline-block;font:600 13px var(--body);letter-spacing:.06em;color:#0c1120;background:linear-gradient(135deg,var(--gold-hi),var(--gold));padding:6px 12px;border-radius:30px}
+.pk{display:grid;gap:14px;margin-top:22px}
+.pkg{position:relative;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 20px 18px}
+.pkg.top{border:1.5px solid var(--gold);background:linear-gradient(160deg,rgba(216,178,106,.16),var(--card) 55%);box-shadow:0 20px 50px -24px rgba(216,178,106,.45)}
+.badge{position:absolute;top:-12px;left:20px;font:600 12px var(--body);letter-spacing:.1em;text-transform:uppercase;color:#0c1120;background:linear-gradient(135deg,var(--gold-hi),var(--gold));padding:5px 12px;border-radius:30px}
+.ph{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 12px}
+.ph b{font:700 26px var(--ser)}
+.pr{font:700 30px var(--ser);white-space:nowrap;font-variant-numeric:tabular-nums}
+.pr small{font:500 14px var(--body);-webkit-text-fill-color:var(--mute);color:var(--mute)}
+.ps{color:var(--mute);font-size:15px;margin:4px 0 14px}
+.save{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:14px;color:var(--gold-hi)}
+
+/* faq */
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 18px;margin-top:10px}
+details:first-of-type{margin-top:22px}
+summary{cursor:pointer;list-style:none;font-weight:600;padding:14px 0;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--gold);font-size:22px;line-height:1}
+details[open] summary::after{content:"–"}
+details p{margin:0 0 16px;color:#cfd3dc}
+summary:focus-visible,button:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px;border-radius:6px}
+
+/* contact */
+.contact{margin-top:22px;text-align:center;background:var(--card);border:1px solid var(--gold);border-radius:18px;padding:26px 18px}
+.contact .num{font:700 clamp(34px,10vw,46px) var(--ser);margin:6px 0 4px;user-select:all;-webkit-user-select:all;font-variant-numeric:tabular-nums}
+.contact p{color:var(--mute);margin:0}
+.btns{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:18px}
+.btn{font:600 15px var(--body);padding:13px 20px;border-radius:999px;cursor:pointer;border:1px solid var(--gold);background:transparent;color:var(--gold-hi);text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.btn.primary{background:linear-gradient(135deg,var(--gold-hi),var(--gold) 50%,var(--gold-lo));color:#0c1120;border-color:transparent}
+.toast{min-height:20px;font-size:13px;color:var(--gold);margin-top:10px}
+footer{text-align:center;color:var(--mute);font-size:13px;margin-top:40px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mono"><span class="gold">L</span></div>
+    <div class="brand"><b class="gold">Lux Solution</b><small>SAJTOVI · VIDEO</small></div>
+  </header>
+
+  <div class="hero">
+    <div class="eyebrow">Za firme i majstore</div>
+    <h1 style="margin-top:12px">Sajtovi i video reklame za <em class="gold">vašu firmu.</em></h1>
+    <p>Pravimo moderne sajtove i video reklame koje vam dovode nove mušterije sa Google-a, Instagrama i TikToka.</p>
+    <div class="phone"><video id="reel" src="showreel.mp4" poster="poster.jpg" controls muted loop playsinline preload="metadata"></video></div>
+    <div class="hint">Pustite video sa zvukom 🔊</div>
+  </div>
+
+  <section>
+    <div class="eyebrow">Šta radimo</div>
+    <h2>Dve stvari, <em class="gold">urađene kako treba.</em></h2>
+    <div class="svc rev">
+      <div class="box">
+        <h3><i><svg viewBox="0 0 24 24"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="M16 10l5-3v10l-5-3"/></svg></i>Video reklame</h3>
+        <p>Kratak uspravni video, 30 do 40 sekundi, napravljen baš za vašu firmu.</p>
+        <ul class="ck">
+          <li>Vaše slike i snimci sa posla, logo i boje</li>
+          <li>Animacije, muzika i zvučni efekti</li>
+          <li>Vaš broj telefona i usluge u reklami</li>
+          <li>Spremno za Instagram, TikTok, Facebook i Viber status</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3><i><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></i>Izrada sajtova</h3>
+        <p>Moderan sajt koji radi na telefonu i dovodi vam pozive.</p>
+        <ul class="ck">
+          <li>Izgled prilagođen vašem poslu</li>
+          <li>Dugme za poziv odmah na vrhu</li>
+          <li>Osnovni SEO, da vas nađu na Google-u</li>
+          <li>Galerija vaših radova</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="sajtovi">
+    <div class="eyebrow">Sajtovi koje smo radili</div>
+    <h2>Pogledajte <em class="gold">uživo.</em></h2>
+    <p class="lead">Pravi sajtovi naših klijenata. Kliknite i otvorite.</p>
+    <div class="sites">
+      <a class="site" href="https://roletnebeograd.com" target="_blank" rel="noopener" style="--c1:#0b0b0d;--c2:#e1252e;--tx:#fff">
+        <div class="bw"><i></i><i></i><i></i><span>roletnebeograd.com</span></div>
+        <img class="shot" src="s_rb.jpg" alt="Početna strana sajta roletnebeograd.com" loading="lazy">
+        <div class="meta"><span>Roletne i komarnici</span><u>Otvori ↗</u></div>
+      </a>
+      <a class="site" href="https://gvozdenoviczavarivanje.netlify.app" target="_blank" rel="noopener" style="--c1:#121820;--c2:#4aa8ff;--tx:#fff">
+        <div class="bw"><i></i><i></i><i></i><span>gvozdenoviczavarivanje.netlify.app</span></div>
+        <img class="shot" src="s_gz.jpg" alt="Početna strana sajta Gvozdenović zavarivanje" loading="lazy">
+        <div class="meta"><span>Bravarija</span><u>Otvori ↗</u></div>
+      </a>
+      <a class="site" href="https://slepsluzbasudarpancevo.com" target="_blank" rel="noopener" style="--c1:#ffc812;--c2:#111111;--tx:#111">
+        <div class="bw"><i></i><i></i><i></i><span>slepsluzbasudarpancevo.com</span></div>
+        <img class="shot" src="s_sudar.jpg" alt="Početna strana sajta Šlep služba Sudar Pančevo" loading="lazy">
+        <div class="meta"><span>Šlep služba</span><u>Otvori ↗</u></div>
+      </a>
+      <a class="site" href="https://slepborca.netlify.app" target="_blank" rel="noopener" style="--c1:#070708;--c2:#ffd400;--tx:#fff">
+        <div class="bw"><i></i><i></i><i></i><span>slepborca.netlify.app</span></div>
+        <img class="shot" src="s_deki.jpg" alt="Početna strana sajta Šlep Borča Deki Team" loading="lazy">
+        <div class="meta"><span>Šlep služba</span><u>Otvori ↗</u></div>
+      </a>
+      <a class="site" href="https://autoservisvrcin0-24.rs" target="_blank" rel="noopener" style="--c1:#17191e;--c2:#ff7a1a;--tx:#fff">
+        <div class="bw"><i></i><i></i><i></i><span>autoservisvrcin0-24.rs</span></div>
+        <img class="shot" src="s_amv.jpg" alt="Početna strana sajta AMV Servis Vrčin" loading="lazy">
+        <div class="meta"><span>Auto servis</span><u>Otvori ↗</u></div>
+      </a>
+      <a class="site" href="https://minicmotosport.rs" target="_blank" rel="noopener" style="--c1:#0a0a0b;--c2:#e5161f;--tx:#fff">
+        <div class="bw"><i></i><i></i><i></i><span>minicmotosport.rs</span></div>
+        <img class="shot" src="s_minic.jpg" alt="Početna strana sajta Minić Motorsport" loading="lazy">
+        <div class="meta"><span>Chiptuning</span><u>Otvori ↗</u></div>
+      </a>
+    </div>
+  </section>
+
+  <section id="video">
+    <div class="eyebrow">Video reklame koje smo radili</div>
+    <h2>Svaka firma, <em class="gold">svoja priča.</em></h2>
+    <p class="lead">Svaka reklama je urađena posebno, u bojama i stilu firme.</p>
+    <div class="grid">
+      <div class="ex"><img src="mm.jpg" alt="Reklama za chiptuning servis" loading="lazy"><span>Chiptuning</span></div>
+      <div class="ex"><img src="gz.jpg" alt="Reklama za bravariju i zavarivanje" loading="lazy"><span>Bravarija</span></div>
+      <div class="ex"><img src="pb.jpg" alt="Reklama za perionicu" loading="lazy"><span>Perionica</span></div>
+      <div class="ex"><img src="sm.jpg" alt="Reklama za auto servis" loading="lazy"><span>Auto servis</span></div>
+      <div class="ex"><img src="dk.jpg" alt="Reklama za šlep službu" loading="lazy"><span>Šlep služba</span></div>
+      <div class="ex"><img src="ml.jpg" alt="Reklama za molera" loading="lazy"><span>Moler</span></div>
+      <div class="ex"><img src="ss.jpg" alt="Reklama za šlep službu" loading="lazy"><span>Šlep 0–24</span></div>
+      <div class="ex"><img src="amv.jpg" alt="Reklama za auto servis i vulkanizer" loading="lazy"><span>Vulkanizer</span></div>
+      <div class="ex"><img src="rb.jpg" alt="Reklama za roletne" loading="lazy"><span>Roletne</span></div>
+    </div>
+  </section>
+
+  <section id="preporuke">
+    <div class="eyebrow">Klijenti o nama</div>
+    <h2>Reč onih koji su <em class="gold">već radili sa nama.</em></h2>
+    <div class="tm">
+      <figure class="quote">
+        <div class="stars" aria-label="5 od 5">★★★★★</div>
+        <blockquote>„Lepo urađena reklama, preporučiću te! 😀“</blockquote>
+        <figcaption><span class="av">M</span><span><b>Mirko</b><small>Moler 021 · Novi Sad · video reklama</small></span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">Kako ide</div>
+    <h2>Vi pošaljete slike, <em class="gold">mi radimo ostalo.</em></h2>
+    <ol class="steps">
+      <li><div><b>Pošaljete slike i podatke</b><span>Na Viber: slike ili kratke snimke sa posla, logo i broj telefona.</span></div></li>
+      <li><div><b>Mi napravimo sajt ili reklamu</b><span>Video obično za 1 do 2 dana, sajt za nekoliko dana.</span></div></li>
+      <li><div><b>Pogledate i kažete šta da menjamo</b><span>Tekst, boje, redosled slika. Sitne izmene su uključene.</span></div></li>
+      <li><div><b>Dobijate gotov posao</b><span>Sajt postavljen na vaš domen, a video u punom kvalitetu, spreman za objavu.</span></div></li>
+    </ol>
+  </section>
+
+  <section>
+    <div class="eyebrow">Šta nam treba od vas</div>
+    <h2>Spremite <em class="gold">ovo.</em></h2>
+    <div class="box" style="margin-top:22px">
+      <ul class="ck">
+        <li>5 do 15 slika vaših radova (što svetlije i oštrije, to bolje)</li>
+        <li>Kratki snimci sa posla, ako ih imate (snimci najviše podižu reklamu)</li>
+        <li>Logo, ako postoji</li>
+        <li>Broj telefona, Instagram ili sajt</li>
+        <li>Šta želite da istaknete: usluge, rad 0–24, besplatan izlazak…</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="cene">
+    <div class="eyebrow">Paketi</div>
+    <h2>Sve na jednom mestu, <em class="gold">povoljnije.</em></h2>
+    <p class="lead"><span class="intro">Uvodne cene za prve klijente</span></p>
+    <div class="pk">
+      <div class="pkg">
+        <div class="ph"><b>Start</b><span class="pr gold">180 €</span></div>
+        <div class="ps">Za firmu koja tek izlazi na internet</div>
+        <ul class="ck">
+          <li>Sajt na jednoj stranici</li>
+          <li>1 video reklama</li>
+          <li>Domen i hosting prva godina</li>
+        </ul>
+        <div class="save">Umesto 300 €</div>
+      </div>
+      <div class="pkg top">
+        <div class="badge">Najbolji izbor</div>
+        <div class="ph"><b>Biznis</b><span class="pr gold">370 €</span></div>
+        <div class="ps">Kompletan nastup na internetu</div>
+        <ul class="ck">
+          <li>Sajt do 5 stranica + SEO</li>
+          <li>3 video reklame</li>
+          <li>Google profil firme</li>
+          <li>Domen i hosting prva godina</li>
+        </ul>
+        <div class="save">Umesto 500 €</div>
+      </div>
+      <div class="pkg">
+        <div class="ph"><b>Mesečno</b><span class="pr gold">15.000 din<small>/mes.</small></span></div>
+        <div class="ps">Stalno novi sadržaj na vašim mrežama</div>
+        <ul class="ck">
+          <li>4 nove video reklame svakog meseca</li>
+          <li>Opis i hešteg za svaku objavu</li>
+          <li>Bez ugovorne obaveze</li>
+        </ul>
+        <div class="save">3.750 din po videu</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">Pojedinačno</div>
+    <h2>Cene <em class="gold">bez iznenađenja.</em></h2>
+    <h3 class="pt">Sajtovi</h3>
+    <div class="prices">
+      <div class="price"><div><b>Osnovni sajt</b><small>Jedna stranica: početak, usluge, slike, kontakt, dugme za poziv</small></div><div class="v">150 €</div></div>
+      <div class="price"><div><b>Prošireni sajt</b><small>Jedna stranica + velika galerija, video, česta pitanja, područja rada</small></div><div class="v"><i>od</i>200 €</div></div>
+      <div class="price"><div><b>Sajt sa više stranica</b><small>Posebna strana za svaku uslugu + SEO</small></div><div class="v"><i>od</i>300 €</div></div>
+      <div class="price"><div><b>Domen i održavanje</b><small>Prva godina uključena u cenu sajta. Od druge godine, sitne izmene uključene</small></div><div class="v">40 €<small>/god.</small></div></div>
+    </div>
+    <h3 class="pt">Video reklame</h3>
+    <div class="prices">
+      <div class="price"><div><b>Video od vaših slika</b><small>Uspravni video, 30 do 40 s</small></div><div class="v">5.000 din</div></div>
+      <div class="price"><div><b>Video od vaših snimaka</b><small>Pravi snimci sa posla, montaža i efekti</small></div><div class="v">7.000 din</div></div>
+      <div class="price"><div><b>Paket 3 videa</b><small>Tri različite reklame za vašu firmu</small></div><div class="v">12.000 din</div></div>
+    </div>
+    <p class="note">Za video plaćate kad vidite gotovu reklamu i kad vam se svidi. Za sajt je 50% avans, a ostatak kad je sajt gotov. Plaćanje sajta može i u dva dela.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow">Česta pitanja</div>
+    <h2>Pitali ste <em class="gold">nas.</em></h2>
+    <details><summary>Ko kači video na moj profil?</summary><p>Dobijete gotov video i okačite ga sami, kao običnu objavu ili Reels. Traje par minuta. Ako želite, možemo da ga objavimo i mi.</p></details>
+    <details><summary>Nemam lepe slike. Može li ipak?</summary><p>Može. Pošaljite šta imate, a mi izaberemo najbolje. Ako slika ima malo, deo reklame uradimo animacijom.</p></details>
+    <details><summary>Da li mogu da tražim izmene?</summary><p>Da. Sitne izmene teksta, boja i redosleda su uključene u cenu.</p></details>
+    <details><summary>Gde sve mogu da koristim video?</summary><p>Svuda: Instagram, TikTok, Facebook, Viber i WhatsApp status, na sajtu ili za plaćene reklame. Video je vaš.</p></details>
+    <details><summary>Koliko traje izrada?</summary><p>Obično 1 do 2 dana od kad pošaljete slike i podatke.</p></details>
+  </section>
+
+  <section>
+    <div class="eyebrow">Kontakt</div>
+    <h2>Hoćete primer za <em class="gold">vašu firmu?</em></h2>
+    <div class="contact">
+      <p>Pišite na Viber ili pozovite</p>
+      <div class="num gold" id="num">062 8251514</div>
+      <p>Lux Solution · Video reklame · Sajtovi</p>
+      <div class="btns">
+        <button class="btn primary" id="copy" type="button">Kopiraj broj</button>
+        <a class="btn" href="tel:+381628251514">Pozovi</a>
+      </div>
+      <div class="toast" id="toast" role="status"></div>
+    </div>
+  </section>
+
+  <footer>© Lux Solution</footer>
+</div>
+
+<script>
+(function(){
+  const t=document.getElementById('toast');
+  document.getElementById('copy').addEventListener('click',()=>{
+    const n='062 8251514';
+    const sel=()=>{try{const r=document.createRange();r.selectNodeContents(document.getElementById('num'));const s=getSelection();s.removeAllRanges();s.addRange(r);}catch(e){}t.textContent='Broj je označen, kopirajte ga.';};
+    try{navigator.clipboard.writeText(n).then(()=>{t.textContent='Broj je kopiran: '+n;},sel);}catch(e){sel();}
+  });
+  const v=document.getElementById('reel');
+  try{v.play().catch(()=>{});}catch(e){}
+})();
+</script>
+</body>
+</html>
